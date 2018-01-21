@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApplication4.WpfWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WpfWindow" Height="485.836" Width="576.119" AllowsTransparency="True" WindowStyle="None" Opacity="0.9">
+    <Grid Margin="0,0,2,48">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="311*"/>
+            <ColumnDefinition Width="191*"/>
+            <ColumnDefinition Width="62*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="quit" Content="Close" HorizontalAlignment="Left" Margin="22,418,0,-28" VerticalAlignment="Top" Width="112" Height="48" Click="Button_Click_1" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" FontSize="14" Grid.Column="1"/>
+        <Label Content="Remind me in " HorizontalAlignment="Left" Margin="60,378,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Minutes" HorizontalAlignment="Left" Margin="274,382,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.579,-1.615" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="rappel" HorizontalAlignment="Left" Height="33" Margin="201,384,0,0" TextWrapping="Wrap" Text="60" VerticalAlignment="Top" Width="68" FontSize="14"/>
+        <Label x:Name="box1" Content="Task" HorizontalAlignment="Left" Margin="9,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.364,-0.385" FontSize="28" FontWeight="Bold" Background="#FFF2F1F3" Width="68" FontFamily="Segoe UI Semibold" Foreground="#FF2C0CF7" Height="46">
+            <Label.Effect>
+                <DropShadowEffect BlurRadius="0"/>
+            </Label.Effect>
+        </Label>
+        <DataGrid x:Name="datatask" HorizontalAlignment="Left" Margin="5,91,0,0" VerticalAlignment="Top" Width="558" MouseUp="datatask_MouseUp" MouseEnter="datatask_MouseEnter" HorizontalGridLinesBrush="#FFF0EAEA" VerticalGridLinesBrush="#FFF1E4E4" Height="228" FontSize="28" FontFamily="Segoe UI Semibold" Background="#FFB1E6EE" BorderBrush="#FFEFF3F7" Foreground="#FF3618F7" BorderThickness="2,1" Grid.ColumnSpan="3"/>
+        <Label Content="Today Tasks" HorizontalAlignment="Left" Margin="193,-6,0,0" VerticalAlignment="Top" FontSize="22" Width="157" Background="#FFF3F3F4" Height="37" Opacity="0.6" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="show3" Content="Do not show this until the next boot" HorizontalAlignment="Left" Margin="71,343,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.712,-1" FontSize="14" Grid.ColumnSpan="2" FontWeight="Bold" Width="259"/>
+
+    </Grid>
+</Window>
